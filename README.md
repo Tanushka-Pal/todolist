@@ -1,16 +1,55 @@
-# React + Vite
+# Todo List App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React + Vite todo list application styled with the provided `src/index.css`.
 
-Currently, two official plugins are available:
+## What it does
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Add a new task using the input field and `Add Task` button
+- Mark tasks complete using the checkbox
+- Delete tasks with the trash button
+- Show an empty state message when no tasks exist
 
-## React Compiler
+## Project structure
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- `src/App.jsx` - main app state and logic for adding, deleting, and toggling todos
+- `src/Components/TodoInput.jsx` - text input and add button UI
+- `src/Components/Todolist.jsx` - renders the list of todo cards
+- `src/Components/Todocard.jsx` - individual todo item UI and actions
+- `src/index.css` - shared styling used by the app layout and cards
 
-## Expanding the ESLint configuration
+## Scripts
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- `npm run dev` - start the Vite development server
+- `npm run build` - build the production bundle
+- `npm run preview` - preview the production build locally
+- `npm run lint` - run ESLint over the project
+
+## How to use
+
+1. Install dependencies:
+
+```bash
+npm install
+```
+
+2. Start the development server:
+
+```bash
+npm run dev
+```
+
+3. Open the local URL shown in the terminal to use the todo list app.
+
+## Styling
+
+The app uses the existing `src/index.css` file for:
+
+- a light blue background and centered layout
+- rounded input and button styles
+- white todo cards with padding and spacing
+- hover states for buttons
+
+## Notes
+
+- The todo items are stored in React state and are not persisted across refreshes.
+- Pressing `Enter` in the input field also adds the task.

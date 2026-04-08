@@ -3,8 +3,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #202124;
+  
 }
+
 
 h1,
 h2,
@@ -19,7 +20,8 @@ button {
   display: flex;
   flex-direction: column;
   padding: 14px;
-  background: #eff6ff;
+  background: rgb(211, 207, 207);
+  color: white;
   gap: 14px;
 }
 
@@ -59,7 +61,8 @@ header input {
   padding: 14px 18px;
   border: none;
   outline: none;
-  background: white;
+  background: rgb(51, 50, 50);
+  color: white;
 }
 
 p {
@@ -78,7 +81,7 @@ p {
   gap: 14px;
   padding: 14px;
   border-radius: 14px;
-  background: white;
+  color: white;
 }
 
 .todoItem p {
